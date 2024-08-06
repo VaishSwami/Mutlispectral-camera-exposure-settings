@@ -8,11 +8,6 @@ Created on Mon Mar 20 14:00:59 2023
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-# df_B= pd.read_excel(r'I:\Cotton2022\UAV Shadows\UAV Tarps\23June2022\Tarps\TarpRefl.xlsx', sheet_name='B')
-# df_G= pd.read_excel(r'I:\Cotton2022\UAV Shadows\UAV Tarps\23June2022\Tarps\TarpRefl.xlsx', sheet_name='G')
-# df_R= pd.read_excel(r'I:\Cotton2022\UAV Shadows\UAV Tarps\23June2022\Tarps\TarpRefl.xlsx', sheet_name='R')
-# df_RE= pd.read_excel(r'I:\Cotton2022\UAV Shadows\UAV Tarps\23June2022\Tarps\TarpRefl.xlsx', sheet_name='RE')
-# df_NIR= pd.read_excel(r'I:\Cotton2022\UAV Shadows\UAV Tarps\23June2022\Tarps\TarpRefl.xlsx', sheet_name='NIR')
 
 sheets=['B','G','R','RE','NIR']
 band_dict= {'B':'Blue', 'G':'Green', 'R': 'Red', 'RE': 'Red Edge', 'NIR': 'NIR'}
@@ -32,7 +27,7 @@ o1_l=[0.09,0.09,0.18,0.13,0.17]
 o1_u=[0.248,0.18,0.42,0.42,0.42]
 
 for sht,i in zip(sheets,[0,1,2,3,4]):
-    df= pd.read_excel(r'G:\Other computers\My Computer SSD\Cotton2022\UAV Shadows\UAV Tarps\23June2022\Tarps\TarpRefl.xlsx', sheet_name=sht).dropna(subset=['Black tarp reflectance'])
+    df= pd.read_excel(r'.\Exposure Settings Data\Cross-calibration dataset\TarpRefl.xlsx', sheet_name=sht).dropna(subset=['Black tarp reflectance'])
     # x_1x= df.query('Gain==1')['Exposure Time']*1000
     # b_1x= df.query('Gain==1')['Black tarp reflectance']
     # g_1x= df.query('Gain==1')['Gray tarp reflectance']

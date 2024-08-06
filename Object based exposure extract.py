@@ -9,7 +9,7 @@ import shutil
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-input_path=r'G:\My Drive\Prelims and Dissertation\Papers\Autoexposure\Additional Analysis\Object based exposure\16June2022'
+input_path=r'Exposure Settings Data\Object based exposure\16June2022'
 output_path= input_path+'\\Targets\\'
 # lst=[334,335,383,384,387,436]
 # # for pth in glob.glob(input_path+'\\0*\\'):

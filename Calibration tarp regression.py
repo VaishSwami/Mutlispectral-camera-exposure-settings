@@ -15,7 +15,7 @@ import math
 import statsmodels.api as sma
 
 # Load the data from the Excel file
-file_path=r"G:\My Drive\Prelims and Dissertation\Papers\Autoexposure\Additional Analysis\Calibration Tarps\Tarp Refl-Fixed vs Auto-16June2022.xlsx"
+file_path=r".\Exposure Settings Data\Radiometric accuracy targets\Tarp Refl-Fixed vs Auto-16June2022.xlsx"
 file_name = pd.ExcelFile(file_path)
 sheets= file_name.sheet_names
 fig, ax = plt.subplots(2,5, sharex=True, sharey=True)

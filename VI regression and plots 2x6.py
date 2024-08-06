@@ -34,7 +34,7 @@ def perform_quadratic_regression(x, y):
 # def compute_mape(y_true, y_pred):
 #     return mape(y_true, y_pred)
 # Load the data from the Excel file
-file_path=r"G:\My Drive\Prelims and Dissertation\Papers\Autoexposure\Additional Analysis\VI\Vegetation Index-Fixed vs Auto-N plots gm2.xlsx"
+file_path=r".\Vegetation Indices\Vegetation Index-Fixed vs Auto-N plots gm2.xlsx"
 file_name = pd.ExcelFile(file_path)
 sheets= file_name.sheet_names
 fig, ax = plt.subplots(6, 2, sharex=True, sharey=True)

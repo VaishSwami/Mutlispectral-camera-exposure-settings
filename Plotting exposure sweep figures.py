@@ -27,7 +27,7 @@ o1_l=[0.09,0.09,0.18,0.13,0.17]
 o1_u=[0.248,0.18,0.42,0.42,0.42]
 
 for sht,i in zip(sheets,[0,1,2,3,4]):
-    df= pd.read_excel(r'.\Exposure Settings Data\Cross-calibration dataset\TarpRefl.xlsx', sheet_name=sht).dropna(subset=['Black tarp reflectance'])
+    df= pd.read_excel(r'.\Exposure Settings Data\Cross-calibration dataset\TarpRefl-Batch1.xlsx', sheet_name=sht).dropna(subset=['Black tarp reflectance']) # Exposure sweep can be performed to other Batches too
     # x_1x= df.query('Gain==1')['Exposure Time']*1000
     # b_1x= df.query('Gain==1')['Black tarp reflectance']
     # g_1x= df.query('Gain==1')['Gray tarp reflectance']
